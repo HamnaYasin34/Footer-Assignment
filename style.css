@@ -1,0 +1,97 @@
+.intro{
+    background-color: rgb(184, 16, 58);
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color:darkblue;
+    padding: 50px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .about,
+  .social-media,
+  .contact {
+    flex-basis: calc(33.33% - 20px);
+  }
+  
+  .about h3,
+  .social-media h3,
+  .contact h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .social-media ul,
+  .contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    align-items: center;
+  }
+  
+  .social-media li,
+  .contact li {
+    margin-right: 20px;
+  }
+  
+  .social-media img,
+  .contact img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .contact li {
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+  }
+.social-media a{
+    text-decoration: none;
+    color: white;
+}footer.c {
+    background-color:red;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer nav {
+    margin-top: 5px;
+  }
+  
+  footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  } footer nav li {
+    display: inline-block;
+  }
+  
+  footer nav li:not(:last-child)::after {
+    content: "|";
+    margin: 0 5px;
+  }
+.c a{
+text-decoration: none;
+color: white;
+}
+@media only screen and (max-width: 767px) { footer.C { flex-direction: column; align-items: center; text-align: center; padding: 30px; } .about, .social-media, .contact { flex-basis: 100%; } .social-media ul, .contact ul { justify-content: space-between; margin-top: 20px; } .contact li { margin-top: 10px; } }
+@media (max-width: 767px) { footer nav { text-align: center; } footer nav ul { display: inline-block; } footer nav li:not(:last-child)::after { display: none; } }
+/* Target screens that are at least 768 pixels wide */
